@@ -9,3 +9,9 @@ ABC Software Company integration implementation
  * A description of Salesforce.com functionality and customizations that will be required 
  * The integration and data migration approach
  * A description of the suggested development methodology
+ 
+ 
+ ## ETL 
+  * Extract data from the source system.  This involves data from a number of source systems, and both relational and non-relational structures.
+  * Transforming the data to fit operational needs, which can include data quality levels.
+  * Loading the data into the target system.
