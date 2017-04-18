@@ -43,3 +43,4 @@ A custon Visualforce page or button that initiates an Apex HTTP callout in a syn
 3. The controller calls a previously-generated Apex web service proxy class.
 4. The proxy class performs the actual call to the remote Web service.
 5. The response from the remote system is returned to the Apex controller, which then processes the response, updates any data in Salesforce as required, and re-renders the page.  
+
