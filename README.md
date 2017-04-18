@@ -51,7 +51,7 @@ The application of the solutions related to this pattern allows for event-initia
 #### Calling Mechanism
 
 The calling mechanism depends on the solution chosen to implement this pattern.
-| ----------------- | :----------: |
+
 | Calling Mechanism | Description |
 | ----------------- | :--------- |
 | Visualforce and Apex controllers | Used when the remote process is to be triggered, as part of an end-to-end process involving the user interface, and the resulting state must be displayed to the end-user and/or updated in a Salesforce record.  For example, the submission of a credit card payment to an external payment gateway, where the payment results are immediately returned and displayed to the user. |
