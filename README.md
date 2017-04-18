@@ -31,3 +31,5 @@ There are various forces to consider when applying solutions based on this patte
  * Is the integration based on the occurence of a specific event, such as a button click in the Salesforce user interface or DML-based events?
 
 ### Solution
+A custon Visualforce page or button that initiates an Apex HTTP callout in a syncronous manner.
+   * Salesforce provides the ability to invoke HTTP services using 
