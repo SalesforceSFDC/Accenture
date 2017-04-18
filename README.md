@@ -17,3 +17,4 @@ ABC Software Company integration implementation
   * Loading the data into the target system.
 
 ## Remote Process Invocation - Request and Reply
+After the order details are captured in Salesforce, an order needs to be created in the remote system (OMS), and the remote system manages the order through its conclusion.
