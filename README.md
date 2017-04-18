@@ -58,3 +58,5 @@ The calling mechanism depends on the solution chosen to implement this pattern.
 | Apex triggers | Used primarily for invocation of remote processes using Apex callouts from DML-initiated events.  |
 | Apex batch classes | Used for invocation of remote processes in batch.  |
 
+#### Error handling and recovery
+An error handling and recovery strategy must be considered as part of the overall solution.
