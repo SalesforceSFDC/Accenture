@@ -33,3 +33,4 @@ There are various forces to consider when applying solutions based on this patte
 ### Solution
 A custon Visualforce page or button that initiates an Apex HTTP callout in a syncronous manner.
    * Salesforce provides the ability to invoke HTTP services using 
+
