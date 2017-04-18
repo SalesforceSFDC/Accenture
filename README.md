@@ -35,3 +35,4 @@ A custon Visualforce page or button that initiates an Apex HTTP callout in a syn
    * Salesforce provides the ability to invoke HTTP services using standard GET, POST, PUT, and DELETE methods.  A number of HTTP classes can be used to integrate with RESTful services, although its also possible to integrate to SOAP based services by manually constructing the SOAP message.  The latter is not recommended as its possible for Salesforce to consume WSDLs to generate proxy classes.
    * A user-initiated action on a Visualforce page then calls an Apex controller action that then executes this proxy Apex class to perform the remote call.  Visualforce pages require customization of the Salesfoce application.
 
+### Sketch
