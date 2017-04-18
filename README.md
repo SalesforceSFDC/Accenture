@@ -60,4 +60,5 @@ The calling mechanism depends on the solution chosen to implement this pattern.
 
 #### Error handling and recovery
 An error handling and recovery strategy must be considered as part of the overall solution.
- * *Error handling* - 
+ * *Error handling* - When an error occurs (exceptions or error codes are returned to the caller), error handling is managed by the caller.  For example, an error message displayed on the end-user's page or logged to a table requiring further action.
+ * *Recovery* - Changed are not commited to Salesforce until a succesful response is received by the caller.  For example, the order status will not be updated in the database until a response that indicates success is received.  If necessary, the caller can retry the operation.
