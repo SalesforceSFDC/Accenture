@@ -36,7 +36,7 @@ A custon Visualforce page or button that initiates an Apex HTTP callout in a syn
    * A user-initiated action on a Visualforce page then calls an Apex controller action that then executes this proxy Apex class to perform the remote call.  Visualforce pages require customization of the Salesfoce application.
 
 ### Sketch
-![Remote Process Invocation](/Users/vukdukic/Desktop/Remote\ Process\ Invocation\ -\ Request\ and\ Reply.png)
+![Remote Process Invocation](https://developer.salesforce.com/docs/resources/img/en-us/206.0?doc_id=dev_guides%2Fintegration_patterns%2Fimages%2Fremote_process_invocation_state.png&folder=integration_patterns_and_practices)
 
 1. The user initiates an action on the Visualforce page (i.e., clicks a button)
 2. The browser performs an HTTP POST that in turn performs an action on the corresponding Apex controller.
