@@ -54,4 +54,4 @@ The calling mechanism depends on the solution chosen to implement this pattern.
 
 | Calling Mechanism | Description |
 | ----------------- | :---------: |
-| Visualforce and Apex controllers | 
+| Visualforce and Apex controllers | Used when the remote process is to be triggered, as part of an end-to-end process involving the user interface  |
