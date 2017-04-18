@@ -49,3 +49,9 @@ A custon Visualforce page or button that initiates an Apex HTTP callout in a syn
 The application of the solutions related to this pattern allows for event-initiated remote process invocations, where the result of the transaction needs to be handled by the invoking process in Salesforce.
 
 #### Calling Mechanism
+
+The calling mechanism depends on the solution chosen to implement this pattern.
+
+| Calling Mechanism | Description |
+| ----------------- | :---------: |
+| Visualforce and Apex controllers | 
