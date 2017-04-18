@@ -40,4 +40,6 @@ A custon Visualforce page or button that initiates an Apex HTTP callout in a syn
 
 1. The user initiates an action on the Visualforce page (i.e., clicks a button)
 2. The browser performs an HTTP POST that in turn performs an action on the corresponding Apex controller.
-3. 
+3. The controller calls a previously-generated Apex web service proxy class.
+4. The proxy class performs the actual call to the remote Web service.
+5. The response from the remote system is returned to the Apex controller, which then processes the response, updates any data in Salesforce as required, and re-renders the page.  
