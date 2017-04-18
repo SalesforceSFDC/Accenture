@@ -32,5 +32,6 @@ There are various forces to consider when applying solutions based on this patte
 
 ### Solution
 A custon Visualforce page or button that initiates an Apex HTTP callout in a syncronous manner.
-   * Salesforce provides the ability to invoke HTTP services using  
+   * Salesforce provides the ability to invoke HTTP services using standard GET, POST, PUT, and DELETE methods.  A number of HTTP classes can be used to integrate with RESTful services, although its also possible to integrate to SOAP based services by manually constructing the SOAP message.  The latter is not recommended as its possible for Salesforce to consume WSDLs to generate proxy classes.
+   * 
 
