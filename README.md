@@ -62,3 +62,16 @@ The calling mechanism depends on the solution chosen to implement this pattern.
 An error handling and recovery strategy must be considered as part of the overall solution.
  * *Error handling* - When an error occurs (exceptions or error codes are returned to the caller), error handling is managed by the caller.  For example, an error message displayed on the end-user's page or logged to a table requiring further action.
  * *Recovery* - Changed are not commited to Salesforce until a succesful response is received by the caller.  For example, the order status will not be updated in the database until a response that indicates success is received.  If necessary, the caller can retry the operation.
+
+#### Idempotent Design Considerations
+
+#### Security Considerations
+
+### Sidebars
+
+#### Timeliness
+
+Timelines is of significant importance to this pattern.  In most cases:
+ * The request is typically invoked from the user interface, therefore, the process should not keep the user waiting.
+ * Salesforce has a configurable timeout of up to 60 seconds for calls from Apex.
+ * Completion of the remote process should be executed in a timely manner to conclude within the Salesforce timeout limit and/or within user expectations.
