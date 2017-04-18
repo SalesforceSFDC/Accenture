@@ -22,3 +22,8 @@ After the order details are captured in Salesforce, an order needs to be created
 
 ### Problem
 When an event occurs in Salesforce, how do you initiate a process in a remote system, pass the required information to that process, receive a response from the remote system, and then use the response data to make updates within Salesforce?
+
+### Forces
+There are various forces to consider when applying solutions based on this pattern:
+ * Does the call to the remote system require Salesforce to wait for a response before continuing processing?  (Asynchronous vs synchronous)
+ * 
