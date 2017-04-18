@@ -36,3 +36,6 @@ A custon Visualforce page or button that initiates an Apex HTTP callout in a syn
    * A user-initiated action on a Visualforce page then calls an Apex controller action that then executes this proxy Apex class to perform the remote call.  Visualforce pages require customization of the Salesfoce application.
 
 ### Sketch
+1. The user initiates an action on the Visualforce page (i.e., clicks a button)
+2. The browser performs an HTTP POST that in turn performs an action on the corresponding Apex controller.
+3. 
