@@ -82,3 +82,11 @@ Timelines is of significant importance to this pattern.  In most cases:
 
 #### State Manangement
 
+When integrating systems, keys are important for on-going state tracking, for example, if a record gets created in the remote system, in order to support ongoing updates to that record.  There are two options:
+ * Salesforce stores the remote system's primary or unique surrogate key for the remote record.
+ * The remote system stores the Salesforce unique record ID or some other unique surrogate key.
+There are specific considerations for handling integration keys, depending on which system contains the master record.
+
+| Master System | Description |
+| ------------- | ----------- |
+| Salesforce | In this scenario, the remote system should store either the Salesforce RecordId or some other unique surrogate key from the record. |
