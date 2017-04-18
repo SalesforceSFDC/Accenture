@@ -17,4 +17,8 @@ ABC Software Company integration implementation
   * Loading the data into the target system.
 
 ## Remote Process Invocation - Request and Reply
+### Context
 After the order details are captured in Salesforce, an order needs to be created in the remote system (OMS), and the remote system manages the order through its conclusion.
+
+### Problem
+When an event occurs in Salesforce, how do you initiate a process in a remote system, pass the required information to that process, receive a response
