@@ -60,3 +60,4 @@ The calling mechanism depends on the solution chosen to implement this pattern.
 
 #### Error handling and recovery
 An error handling and recovery strategy must be considered as part of the overall solution.
+ * *Error handling* - 
