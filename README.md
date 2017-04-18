@@ -90,3 +90,4 @@ There are specific considerations for handling integration keys, depending on wh
 | Master System | Description |
 | ------------- | ----------- |
 | Salesforce | In this scenario, the remote system should store either the Salesforce RecordId or some other unique surrogate key from the record. |
+| Remote System | In this scenario, the call to the remote process should return the unique key from the application and Salesforce stores that key value in a unique record field. |
