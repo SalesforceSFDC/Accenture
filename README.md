@@ -91,3 +91,15 @@ There are specific considerations for handling integration keys, depending on wh
 | ------------- | ----------- |
 | Salesforce | In this scenario, the remote system should store either the Salesforce RecordId or some other unique surrogate key from the record. |
 | Remote System | In this scenario, the call to the remote process should return the unique key from the application and Salesforce stores that key value in a unique record field. |
+
+#### Complex Integration Scenarios
+
+#### Governor Limits
+Due to the multi-tenant nature of the Salesforce platform, there are limits to Apex callouts.
+ * Only 10 callouts can be made in a given execution context.
+ * A maximum of 60 seconds invocation time for a given callout and 120 seconds of invocaiton time for all callouts in a given execution context.
+ * A maximum message size of 3 MB for a given callout request and reponse.
+ 
+
+
+#### Middleware Capabilities
