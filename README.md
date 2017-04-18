@@ -21,4 +21,4 @@ ABC Software Company integration implementation
 After the order details are captured in Salesforce, an order needs to be created in the remote system (OMS), and the remote system manages the order through its conclusion.
 
 ### Problem
-When an event occurs in Salesforce, how do you initiate a process in a remote system, pass the required information to that process, receive a response
+When an event occurs in Salesforce, how do you initiate a process in a remote system, pass the required information to that process, receive a response from the remote system, and then use the response data to make updates within Salesforce?
