@@ -29,3 +29,5 @@ There are various forces to consider when applying solutions based on this patte
  * If the call to the remote system is synchronous, does the response need to be processed by Salesforce as part of the same transaction as the intial call?
  * Is the message size relatively small or large?
  * Is the integration based on the occurence of a specific event, such as a button click in the Salesforce user interface or DML-based events?
+
+### Solution
