@@ -100,6 +100,8 @@ Due to the multi-tenant nature of the Salesforce platform, there are limits to A
  * A maximum of 60 seconds invocation time for a given callout and 120 seconds of invocaiton time for all callouts in a given execution context.
  * A maximum message size of 3 MB for a given callout request and reponse.
  
-
-
 #### Middleware Capabilities
+
+## Example 
+
+A utility company uses Salesforce and has a separate system that contains customer billing information.  
