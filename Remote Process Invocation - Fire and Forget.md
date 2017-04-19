@@ -36,4 +36,5 @@ When an event occurs in Salesforce, how do you initiate a process in a remote sy
 ## Forces
 
 There are various forces to consider when applying solutions based on this pattern:
- * Does the call to the remote system require 
+ * Does the call to the remote system require Salesforce to wait for a response before continuing processing?  In other words, is the call to the remote system synchronous request-reply or asynchronous?
+ * 
