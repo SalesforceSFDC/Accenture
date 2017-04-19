@@ -31,5 +31,7 @@ Pattern implementation, Salesforce makes a call to the remote system to create t
 
 ## Problem
 
+When an event occurs in Salesforce, how do you initiate a process in a remote system and pass the required information to that process without waiting for a response form the remote system?
 
+## Forces
 
