@@ -41,4 +41,11 @@ There are various forces to consider when applying solutions based on this patte
  * Is the message size relatively small?
  * Is the integration based on the occurrence of a specific event such as a button click in the Salesforce user interface or DML-based events?
  * Is guaranteed message delivery from Salesforce to the remote system a requirement?
- * 
+ * Is the remote system able to particiapte in a contract-first integration where Salesforce specifies the contract?  In some solution variants (for example, outbound messaging), Salesforce specifies a contract that must be implemented by the remote system endpoint.
+ * Are declarative configuration methods preferred over custom Apex development?  In this case, solutions such as outbound messaging are preferred over Apex callouts.  
+ 
+## Solution
+
+| Solution | Comments |
+| -------- | -------- |
+| Workflow-driven outbound messaging | The remote process is invoked from an insert or update event.  Salesforce provides a workflow-driven outbound messaging capability that allows the sending of SOAP messages to remote systems triggered by an insert or update operation in Salesforce.   |
