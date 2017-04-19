@@ -10,7 +10,7 @@ The following constraints apply:
 This example is best implemented using Salesforce outbound messaging, but does not require the implementation of a proxy service by the remote system:
 
 On the Salesforce side:
- * Create a workflow rule to initiate the outbound message (for example, when the opportunity status changes to "Close-Won")
+ * Create a workflow rule to initiate the outbound message (for example, when the opportunity status changes to "Closed-Won")
  * Create an outbound message that sends only the opportunity RecordId and a SessionId for a subsequent call back.
 On the remote system side:
  * Create a proxy service that can implement the Salesforce outbound message WSDL interface.
@@ -49,4 +49,4 @@ There are various forces to consider when applying solutions based on this patte
 | Solution | Comments |
 | :--------: | -------- |
 | Workflow-driven outbound messaging | The remote process is invoked from an insert or update event.  Salesforce provides a workflow-driven outbound messaging capability that allows the sending of SOAP messages to remote systems triggered by an insert or update operation in Salesforce.  These messages are sent asynchronously and are independent of the Salesforce user interface. <br> <br/> The outbound message is sent to a specific remote endpoint.  The remote service must be able to participate in a contract-first integration where Salesforce provides the contract. <br> </br> On receipt of the message, the remote service must respond with a positive acknowledgment, otherwise Salesforce attempts to retry sending the message, thus providing a form of guaranteed delivery.  When using middleware, this becomes a `first-mile` guarantee of delivery. | 
-| Outbound messaging and callbacks | Callbacks provide a way to mitigate the impacts of out-of-sequence messaging.  In addition, they handle these scenarios: <br/> * Idempotency - Outbound messaging performs  |
+| Outbound messaging and callbacks | Callbacks provide a way to mitigate the impacts of out-of-sequence messaging.  In addition, they handle these scenarios: <br/> 1. Idempotency - Outbound messaging performs retries if an acknowledgment isnt received in a timely fashion, therefore, multiple messages might be sent to the target system.  Using a callback ensures that the data retrieved is at a specific point in time rather than when the message was sent.  <br/> 2. Retrieving additional data -  |
