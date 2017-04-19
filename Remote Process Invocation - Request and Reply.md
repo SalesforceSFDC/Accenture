@@ -106,3 +106,11 @@ Due to the multi-tenant nature of the Salesforce platform, there are limits to A
 
 A utility company uses Salesforce and has a separate system that contains customer billing information.  They want to display the billing history for a customer account without having to store the data in Salesforce.  They have an existing web service that can return a list of bills and their details for a given account number, but cannot otherwise display this data in a browser.
 
+This requirement can be accopmplished with the following:
+ * Salesforce consumes the billing history service WSDL from an Apex proxy class.
+ * Create a Visualforce page and custom controller to execute this Apex proxy class with the account number as the unique identifier.  
+ * The custom controller then parses the return values from the Apex callout and the Visualforce page and subsequently renders the bill to the user.
+
+This example demonstrates the following:
+ * The state of the customer is tracked with an account number stored on the Salesforce account object.
+ * Subsequent processing of the reply messsage by the caller.
