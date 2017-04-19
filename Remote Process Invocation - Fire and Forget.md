@@ -27,3 +27,9 @@ This example demonstrates the following:
 
 Salesforce is not the system that processes or holds the orders.  After the order details are captured in Salesforce, an order needs to be created in the remote system, then the remote system manages the order htrough to its conclusion.
 
+Pattern implementation, Salesforce makes a call to the remote system to create the order, but doesnt wait for successful completion of the call.  The remote system can optionally update Salesforce with the new order number and status in a separate transaction.
+
+## Problem
+
+
+
