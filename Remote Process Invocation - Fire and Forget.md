@@ -37,4 +37,8 @@ When an event occurs in Salesforce, how do you initiate a process in a remote sy
 
 There are various forces to consider when applying solutions based on this pattern:
  * Does the call to the remote system require Salesforce to wait for a response before continuing processing?  In other words, is the call to the remote system synchronous request-reply or asynchronous?
+ * If the call to the remote system is synchronous, does the response need to be processed by Salesforce as part of the same transaction as the call?
+ * Is the message size relatively small?
+ * Is the integration based on the occurrence of a specific event such as a button click in the Salesforce user interface or DML-based events?
+ * Is guaranteed message delivery from Salesforce to the remote system a requirement?
  * 
