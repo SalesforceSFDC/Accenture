@@ -53,3 +53,6 @@ There are various forces to consider when applying solutions based on this patte
 
 ## Sketch
 
+The following diagram illustrates a call from Salesforce to a remote system, where the call is triggered by the create or update operations on a record in Salesforce.
+
+![Remote Process Invocation - Fire and Forget](https://developer.salesforce.com/docs/resources/img/en-us/206.0?doc_id=dev_guides%2Fintegration_patterns%2Fimages%2Fremote_process_invocation_fire_forget.png&folder=integration_patterns_and_practices)
