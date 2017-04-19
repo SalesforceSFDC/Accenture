@@ -25,3 +25,5 @@ This example demonstrates the following:
 
 ## Context 
 
+Salesforce is not the system that processes or holds the orders.  After the order details are captured in Salesforce, an order needs to be created in the remote system, then the remote system manages the order htrough to its conclusion.
+
