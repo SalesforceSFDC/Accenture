@@ -48,4 +48,4 @@ There are various forces to consider when applying solutions based on this patte
 
 | Solution | Comments |
 | -------- | -------- |
-| Workflow-driven outbound messaging | The remote process is invoked from an insert or update event.  Salesforce provides a workflow-driven outbound messaging capability that allows the sending of SOAP messages to remote systems triggered by an insert or update operation in Salesforce.  These messages are sent asynchronously and are independent of the Salesforce user interface. <br/> The outbound message|
+| Workflow-driven outbound messaging | The remote process is invoked from an insert or update event.  Salesforce provides a workflow-driven outbound messaging capability that allows the sending of SOAP messages to remote systems triggered by an insert or update operation in Salesforce.  These messages are sent asynchronously and are independent of the Salesforce user interface. <br> <br/> The outbound message|
