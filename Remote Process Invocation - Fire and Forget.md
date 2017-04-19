@@ -7,3 +7,8 @@ The following constraints apply:
  * There should be custom development in Salesforce.
  * The user doesn't need to be immediately notified of the order number after the opportunity converts to an order.
 
+This example is best implemented using Salesforce outbound messaging, but does not require the implementation of a proxy service by the remote system:
+
+On the Salesforce side:
+
+
