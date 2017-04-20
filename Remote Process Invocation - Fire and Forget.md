@@ -58,4 +58,8 @@ The following diagram illustrates a call from Salesforce to a remote system, whe
 ![Remote Process Invocation - Fire and Forget](https://developer.salesforce.com/docs/resources/img/en-us/206.0?doc_id=dev_guides%2Fintegration_patterns%2Fimages%2Fremote_process_invocation_fire_forget.png&folder=integration_patterns_and_practices)
 
 In this scenario:
- 1. 
+ * A DML update or insert occurs on a given set of records in Salesforce.
+ * A Salesforce workflow rule triggers, based on a given set of conditions.
+ * This workflow rule invokes a pre-configured outbound message that sends a SOAP-based message to a remote listener.
+ * The remote listener receives the SOAP message, places the message on a local queue, and returns a positive acknowledgment to Salesforce as part of the same transaction context.
+ * 
