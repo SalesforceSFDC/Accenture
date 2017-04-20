@@ -62,4 +62,8 @@ In this scenario:
  * A Salesforce workflow rule triggers, based on a given set of conditions.
  * This workflow rule invokes a pre-configured outbound message that sends a SOAP-based message to a remote listener.
  * The remote listener receives the SOAP message, places the message on a local queue, and returns a positive acknowledgment to Salesforce as part of the same transaction context.
- * 
+ * The queueing application forwards the message to the remote application for processing.
+ * Salesforce receives the acknowledgment and completes the request, but doesnt wait for the remote application to process the message.
+ * Salesforce waits for an acknowledgment from the remote system for up to 10 seconds.  After 10 seconds, Salesforce retries sending the outbound message request for up to 24 hours.
+ 
+In the case where the remote system needs to perform operations against Salesforce, an optional call back operation can be implemented.  The outbound message sends a SessionId that can be used in the call back to authenticate and authorize a subsequent API or web service call into Salesforce.
