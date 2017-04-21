@@ -21,7 +21,7 @@ On the remote system side:
 
 This example demonstrates the following:
  * Implementation of a remote process invoked asynchronously
- * End-to-end guranteed delivery
+ * End-to-end guaranteed delivery
  * Subsequent call back to Salesforce to update the state of the record
 
 ## Context 
