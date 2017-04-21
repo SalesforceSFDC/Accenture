@@ -12,6 +12,7 @@ This example is best implemented using Salesforce outbound messaging, but does n
 On the Salesforce side:
  * Create a workflow rule to initiate the outbound message (for example, when the opportunity status changes to "Closed-Won")
  * Create an outbound message that sends only the opportunity RecordId and a SessionId for a subsequent call back.
+
 On the remote system side:
  * Create a proxy service that can implement the Salesforce outbound message WSDL interface.
  * The service will receive one or more notifications indicating that the opportunity is to be converted to an order.
